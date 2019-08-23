@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>newpage</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body class="w3-brown">
+<div id="recordlist" class="mywidth-90" >
+    <header class="w3-container w3-pink w3-center">RECORD HERE</header>
+    <div class="w3-brown" ><h4> <b> Devotional Service</b></h4></div>
+    <div class="w3-brown" style="display: flex">
+           <p class="mywidth-40"> <input type="date" style="background-color:inherit" id="tdate" class="w3-input w3-text-white"> </p>
+           <p class="mywidth-20"></p>
+           <p> <input type="text" placeholder="Preacher" id="preacher" class="w3-input w3-text-white" style="background-color: inherit"> </p>
+    </div>
+    <div class="w3-brown" id="recview">
+        <div style="display:flex;">
+            <p> <input type="text" placeholder="Hymns" id="hym" style="background-color: inherit" class="w3-text-white w3-input"> </p>
+            <span class="mywidth-5"></span>
+            <p> <input type="text" placeholder="Closing Song" id="closngs"class="w3-input w3-text-white" style="background-color: inherit"> </p>
+        </div>
+        <div style="display: flex;">
+            <p> <input type="text" placeholder="Scripture Reading" id="scriptredng" class="w3-input w3-text-white" style="background-color: inherit"> </p>
+            <span class="mywidth-5"></span>
+            
+        </div>
+        <p> <input type="text" placeholder="Sermon Topic" id="sermtpc" class="w3-input w3-sand w3-text-brown"> </p>
+        
+        <div class="w3-sand w3-center">
+            <p>Notes <button class="w3-btn w3-brown w3-round-xxlarge" id="notes">0</button></p>
+            <textarea name="Notes" id="text" cols="35" rows="12"></textarea>
+            <p> <button class=" w3-round-xlarge w3-btn w3-brown" onclick="save()" >Save</button>
+                <button class=" w3-round-xlarge w3-btn w3-brown" onclick="viewlist()" >Viewlist</button>
+            </p> <br>
+            
+        </div>
+        </div>
+    </div>
+        <div id="rec" style="display:none">
+            <header class="w3-center w3-brown"> View Record </header>
+        </div>
+        
+    </div>
+    <script src="newpg.js"></script>
+</body>
+</html>
